@@ -190,17 +190,20 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
   margin-bottom: 54px;
+  -webkit-column-gap: 150px;
+     -moz-column-gap: 150px;
+          column-gap: 150px;
 }
 
 .header-block__details__textile__info {
-  max-width: 45%;
+  width: 50%;
   font: 400 normal 3.25rem/100% "RussoOne";
   color: #fff;
 }
@@ -233,13 +236,21 @@ ul {
   -webkit-column-gap: 24px;
      -moz-column-gap: 24px;
           column-gap: 24px;
+  width: 50%;
 }
 
 .header-block__details__textile__general:nth-of-type(2) {
   margin-bottom: 0;
 }
 
+.header-block__details__textile__general picture {
+  display: contents;
+}
+
 .header-block__details__textile__general.img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-left: -11px;
 }
 
@@ -1087,7 +1098,7 @@ ul {
   }
 
   .header-block__details__textile__info {
-    max-width: 100%;
+    width: 100%;
     text-align: center;
     margin-bottom: 47px;
   }
@@ -1105,6 +1116,7 @@ ul {
   }
 
   .header-block__details__textile__general {
+    width: 100%;
     display: block;
     text-align: center;
     margin-bottom: 47px;
